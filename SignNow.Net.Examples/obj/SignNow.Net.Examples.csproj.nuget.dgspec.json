@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj": {}
+    "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj": {
+    "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
+        "projectUniqueName": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
         "projectName": "SignNow.Net.Examples",
-        "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
+        "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
         "packagesPath": "C:\\Users\\nybadmin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\obj\\",
+        "outputPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj": {
-                "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj"
+              "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj": {
+                "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj"
               },
-              "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
-                "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
+              "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
+                "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj": {
+    "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj": {
       "version": "0.9.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj",
+        "projectUniqueName": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj",
         "projectName": "SignNow.Net.Test",
-        "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj",
+        "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj",
         "packagesPath": "C:\\Users\\nybadmin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\obj\\",
+        "outputPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -112,24 +112,24 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
-                "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
+              "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
+                "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
               }
             }
           },
           "net5.0": {
             "targetAlias": "net5",
             "projectReferences": {
-              "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
-                "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
+              "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
+                "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
               }
             }
           },
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
-              "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
-                "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
+              "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
+                "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
               }
             }
           }
@@ -299,14 +299,14 @@
         }
       }
     },
-    "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
+    "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
       "version": "0.9.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj",
+        "projectUniqueName": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj",
         "projectName": "SignNow.NET",
-        "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj",
+        "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj",
         "packagesPath": "C:\\Users\\nybadmin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\obj\\",
+        "outputPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

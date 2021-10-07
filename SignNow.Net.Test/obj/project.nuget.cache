@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2zZtfmhcrUNCyCchYOOWLIFApLPXq004+5e4oK2Lp898ZCtSLDGy8smbvQ+cR/ct71kphsIuO8p+sHZ0DDybfQ==",
+  "dgSpecHash": "B3ZRUcEKaX6o5mYOK8bKsuAcCKYynOWFjWlGVneSLUQVpAwJyH2fv0UyKEbYuAJhbDK+tYRiYgb3Frt/S0US7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj",
+  "projectFilePath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nybadmin\\.nuget\\packages\\bogus\\31.0.3\\bogus.31.0.3.nupkg.sha512",
     "C:\\Users\\nybadmin\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",

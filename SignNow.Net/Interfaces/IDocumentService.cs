@@ -5,6 +5,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using SignNow.Net.Internal.Requests;
+using SignNow.Net.Model.Responses;
 
 namespace SignNow.Net.Interfaces
 {
@@ -52,7 +53,7 @@ namespace SignNow.Net.Interfaces
         /// <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">If document identity is not valid.</exception>
-        Task<DocumentFromTemplateResponse> GetNewDocumentIdFromTemplateAsync(string templateId, string newDocumentName, CancellationToken cancellationToken = default);
+        Task<CreateDocumentFromTemplateResponse> GetNewDocumentIdFromTemplateAsync(string templateId, string newDocumentName, CancellationToken cancellationToken = default);
 
 
         /// <summary>

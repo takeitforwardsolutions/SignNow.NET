@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rqVqRL4WTJqpp1GSP6oun2gJR1Pjbk51bQSU+Y7AeYK8luCnJEm6i+i3smpTdiT0Jf2gV0DuJgRU4JhnjdKiJw==",
+  "dgSpecHash": "+P0menstKBXxmC18zkz4eg9JsQamMmBuOihfr0Hvm0HYmt1azYf/kM/idwh28aMa2rKVUul9cnTJ1HmduYmO/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj",
+  "projectFilePath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nybadmin\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\3.0.0\\microsoft.codeanalysis.fxcopanalyzers.3.0.0.nupkg.sha512",
     "C:\\Users\\nybadmin\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\3.0.0\\microsoft.codeanalysis.versioncheckanalyzer.3.0.0.nupkg.sha512",
