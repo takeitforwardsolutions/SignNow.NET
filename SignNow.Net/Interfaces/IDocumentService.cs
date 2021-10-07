@@ -24,6 +24,7 @@ namespace SignNow.Net.Interfaces
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">If document identity is not valid.</exception>
         Task<SignNowDocument> UpdateDocumentSmartFields(string documentId, string smartData, CancellationToken cancellationToken = default);
+        Task<CreateTemplateFromDocumentResponse> CreateTemplateFromDocumentAsync(string testPdfDocumentId, string templateName, CancellationToken cancellationToken = default);
 
 
 
@@ -35,25 +36,8 @@ namespace SignNow.Net.Interfaces
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">If document identity is not valid.</exception>
         Task<SignNowDocument> GetDocumentAsync(string documentId, CancellationToken cancellationToken = default);
+           
 
-        /// <summary>
-        /// Retrieves a document detailed data.
-        /// </summary>
-        /// <param name="documentId">Identity of the document to be viewed.</param>
-        /// <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
-        /// <returns></returns>
-        /// <exception cref="System.ArgumentException">If document identity is not valid.</exception>
-        Task<ResponseDocumentFieldsModel> GetDocumentAsyncResponse(string documentId, CancellationToken cancellationToken = default);
-        //Task<ResponseDocumentFieldsModel> GetDocumentAsyncResponse(string documentId, CancellationToken cancellationToken = default);
-        /// <summary>
-        /// Retrieves a document id and name.
-        /// </summary>
-        /// <param name="templateId">Identity of the template to be copied from.</param>
-        /// <param name="newDocumentName">Name for the new document.</param>
-        /// <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
-        /// <returns></returns>
-        /// <exception cref="System.ArgumentException">If document identity is not valid.</exception>
-        Task<CreateDocumentFromTemplateResponse> GetNewDocumentIdFromTemplateAsync(string templateId, string newDocumentName, CancellationToken cancellationToken = default);
 
 
         /// <summary>
@@ -137,5 +121,14 @@ namespace SignNow.Net.Interfaces
         /// <returns>link to download specified document in PDF format</returns>
         /// <exception cref="System.ArgumentException">If document identity is not valid.</exception>
         Task<DownloadLinkResponse> CreateOneTimeDownloadLinkAsync(string documentId, CancellationToken cancellationToken = default);
+     
+       Task<CreateDocumentFromTemplateResponse> CreateDocumentFromTemplateAsync(string id, string documentName, CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Move a document
+        /// </summary>
+        /// <param name="documentId"> Id of document to move </param>
+        /// <param name="folderId"> Id of folder to move document to </param>
+        /// <param name="cancellationToken">Propagates notification that operations should be canceled</param>
+        Task MoveDocumentAsync(string documentId, string folderId, CancellationToken cancellationToken = default);
     }
 }

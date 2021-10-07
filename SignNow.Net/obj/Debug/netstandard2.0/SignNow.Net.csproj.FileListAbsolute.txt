@@ -9,4 +9,3 @@ C:\Users\nybadmin\Source\Repos\SignNow.NET\SignNow.Net\bin\Debug\netstandard2.0\
 C:\Users\nybadmin\Source\Repos\SignNow.NET\SignNow.Net\bin\Debug\netstandard2.0\SignNow.Net.pdb
 C:\Users\nybadmin\Source\Repos\SignNow.NET\SignNow.Net\obj\Debug\netstandard2.0\SignNow.Net.dll
 C:\Users\nybadmin\Source\Repos\SignNow.NET\SignNow.Net\obj\Debug\netstandard2.0\SignNow.Net.pdb
-C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\obj\Debug\netstandard2.0\SignNow.Net.csprojAssemblyReference.cache

@@ -141,25 +141,6 @@
             <returns></returns>
             <exception cref="T:System.ArgumentException">If document identity is not valid.</exception>
         </member>
-        <member name="M:SignNow.Net.Interfaces.IDocumentService.GetDocumentAsyncResponse(System.String,System.Threading.CancellationToken)">
-            <summary>
-            Retrieves a document detailed data.
-            </summary>
-            <param name="documentId">Identity of the document to be viewed.</param>
-            <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
-            <returns></returns>
-            <exception cref="T:System.ArgumentException">If document identity is not valid.</exception>
-        </member>
-        <member name="M:SignNow.Net.Interfaces.IDocumentService.GetNewDocumentIdFromTemplateAsync(System.String,System.String,System.Threading.CancellationToken)">
-            <summary>
-            Retrieves a document id and name.
-            </summary>
-            <param name="templateId">Identity of the template to be copied from.</param>
-            <param name="newDocumentName">Name for the new document.</param>
-            <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
-            <returns></returns>
-            <exception cref="T:System.ArgumentException">If document identity is not valid.</exception>
-        </member>
         <member name="M:SignNow.Net.Interfaces.IDocumentService.UploadDocumentAsync(System.IO.Stream,System.String,System.Threading.CancellationToken)">
             <summary>
             Uploads a file to the SignNow account and creates a document.
@@ -235,6 +216,14 @@
             <param name="cancellationToken">Propagates notification that operations should be canceled</param>
             <returns>link to download specified document in PDF format</returns>
             <exception cref="T:System.ArgumentException">If document identity is not valid.</exception>
+        </member>
+        <member name="M:SignNow.Net.Interfaces.IDocumentService.MoveDocumentAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Move a document
+            </summary>
+            <param name="documentId"> Id of document to move </param>
+            <param name="folderId"> Id of folder to move document to </param>
+            <param name="cancellationToken">Propagates notification that operations should be canceled</param>
         </member>
         <member name="T:SignNow.Net.Interfaces.IFolderService">
             <summary>
@@ -2448,7 +2437,7 @@
             <exception cref="T:System.ArgumentNullException">If <see paramref="documents"/> is null.</exception>
         </member>
         <member name="M:SignNow.Net.Service.DocumentService.MoveDocumentAsync(System.String,System.String,System.Threading.CancellationToken)">
-            <inheritdoc cref="!:IDocumentService.MoveDocumentAsync"/>
+            <inheritdoc cref="M:SignNow.Net.Interfaces.IDocumentService.MoveDocumentAsync(System.String,System.String,System.Threading.CancellationToken)"/>
             <exception cref="T:System.ArgumentException">If <paramref name="documentId"/> is not valid.</exception>
             <exception cref="T:System.ArgumentException">If <paramref name="folderId"/> is not valid.</exception>
         </member>
@@ -2469,9 +2458,6 @@
             <inheritdoc />
             <exception cref="T:System.ArgumentException">If <paramref name="templateId"/> is not valid.</exception>
             <exception cref="T:System.ArgumentNullException">If <paramref name="documentName"/> is null.</exception>
-        </member>
-        <member name="M:SignNow.Net.Service.DocumentService.GetNewDocumentIdFromTemplateAsync(System.String,System.String,System.Threading.CancellationToken)">
-            <inheritdoc />
         </member>
         <member name="T:SignNow.Net.Service.FolderService">
             <summary>

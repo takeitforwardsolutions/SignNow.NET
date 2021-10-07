@@ -1,0 +1,5 @@
+C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Test\obj\Debug\net5\SignNow.Net.Test.csprojAssemblyReference.cache
+C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Test\obj\Debug\net5\SignNow.Net.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Test\obj\Debug\net5\SignNow.Net.Test.AssemblyInfoInputs.cache
+C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Test\obj\Debug\net5\SignNow.Net.Test.AssemblyInfo.cs
+C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Test\obj\Debug\net5\SignNow.Net.Test.csproj.CoreCompileInputs.cache
