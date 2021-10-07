@@ -1,4 +1,4 @@
-# SignNow.NET - TifSolu fork
+# SignNow.NET - TifSolu Fork
 
 [![Build status][actions build badge]][actions build link]
 [![Codecov][codecov badge]][codecov link]
