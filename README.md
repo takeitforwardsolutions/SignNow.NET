@@ -1,4 +1,4 @@
-# SignNow.NET
+# SignNow.NET  TIFSolu Fork
 
 [![Build status][actions build badge]][actions build link]
 [![Codecov][codecov badge]][codecov link]
@@ -6,7 +6,8 @@
 [![NuGet Downloads][nuget downloads badge]][nuget downloads link]
 [![License][license badge]](LICENSE)
 
-## About SignNow
+## About SignNow - TIFSolu Fork
+This isfork from SignNow.Net, where add customization to API from my clients. For example, adding the ability to edit fields and send smartFields via the API.
 
 SignNow.Net is the official .NET 4.5+ and .NET Standard class library for the SignNow API. SignNow allows you to embed legally-binding e-signatures into your app, CRM or cloud storage. Send documents for signature directly from your website. Invite multiple signers to finalize contracts. Track status of your requests and download signed copies automatically.
 
