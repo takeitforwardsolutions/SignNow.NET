@@ -2,7 +2,6 @@ C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\bin\Release\netstandard1.
 C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\bin\Release\netstandard1.2\SignNow.Net.deps.json
 C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\bin\Release\netstandard1.2\SignNow.Net.dll
 C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\bin\Release\netstandard1.2\SignNow.Net.pdb
-C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\obj\Release\netstandard1.2\SignNow.Net.csprojAssemblyReference.cache
 C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\obj\Release\netstandard1.2\SignNow.Net.Exceptions.ExceptionMessages.resources
 C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\obj\Release\netstandard1.2\SignNow.Net.csproj.GenerateResource.cache
 C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net\obj\Release\netstandard1.2\SignNow.Net.AssemblyInfoInputs.cache
