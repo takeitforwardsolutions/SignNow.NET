@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using SignNow.Net.Internal.Requests;
 using SignNow.Net.Internal.Helpers;
 using System.Net.Http;
+using Newtonsoft.Json.Linq;
 using SignNow.Net.Model.Responses;
 
 namespace SignNow.Net.Service
@@ -22,7 +23,7 @@ namespace SignNow.Net.Service
         }
 
         /// <inheritdoc cref="DocumentService(Uri, Token, ISignNowClient)"/>
-        public DocumentService(Uri baseApiUrl, Token token) : this(baseApiUrl, token, null)
+        public DocumentService(Uri baseApiUrl, Token token) : base(baseApiUrl, token)
         {
         }
 
@@ -52,12 +53,12 @@ namespace SignNow.Net.Service
         }
 
         /// <inheritdoc />
-        /// <exception cref="System.ArgumentException">If <see paramref="documentId"/> is not valid.</exception>
         public async Task<SigningLinkResponse> CreateSigningLinkAsync(string documentId, CancellationToken cancellationToken = default)
         {
+            var requestFullUrl = new Uri(ApiBaseUrl, "/link");
             var requestOptions = new PostHttpRequestOptions
             {
-                RequestUrl = new Uri(ApiBaseUrl, "/link"),
+                RequestUrl = requestFullUrl,
                 Content = new JsonHttpContent(new { document_id = documentId.ValidateId() }),
                 Token = Token
             };
@@ -81,7 +82,6 @@ namespace SignNow.Net.Service
                 .RequestAsync(requestOptions, cancellationToken)
                 .ConfigureAwait(false);
         }
-
         /// <inheritdoc />
         public async Task<UploadDocumentResponse> UploadDocumentAsync(Stream documentContent, string fileName, CancellationToken cancellationToken = default)
         {
@@ -179,7 +179,7 @@ namespace SignNow.Net.Service
             var requestOptions = new PostHttpRequestOptions
             {
                 RequestUrl = new Uri(ApiBaseUrl, $"/document/{documentId.ValidateId()}/move"),
-                Content = new JsonHttpContent(new {folder_id = folderId.ValidateId()}),
+                Content = new JsonHttpContent(new { folder_id = folderId.ValidateId() }),
                 Token = Token
             };
 
@@ -241,6 +241,7 @@ namespace SignNow.Net.Service
         /// <inheritdoc />
         /// <exception cref="System.ArgumentException">If <paramref name="templateId"/> is not valid.</exception>
         /// <exception cref="System.ArgumentNullException">If <paramref name="documentName"/> is null.</exception>
+
         public async Task<CreateDocumentFromTemplateResponse> CreateDocumentFromTemplateAsync(string templateId, string documentName, CancellationToken cancellationToken = default)
         {
             Guard.ArgumentNotNull(documentName, nameof(documentName));
@@ -256,5 +257,76 @@ namespace SignNow.Net.Service
                 .RequestAsync<CreateDocumentFromTemplateResponse>(requestOptions, cancellationToken)
                 .ConfigureAwait(false);
         }
+        private async Task<UploadDocumentResponseDetail> UploadDocumentDetailsAsync(string requestRelativeUrl, Stream documentContent, string fileName, CancellationToken cancellationToken = default)
+        {
+            var requestFullUrl = new Uri(ApiBaseUrl, requestRelativeUrl);
+            var requestOptions = new PostHttpRequestOptions
+            {
+                RequestUrl = requestFullUrl,
+                Content = new FileHttpContent(documentContent, fileName),
+                Token = Token
+            };
+
+            return await SignNowClient
+                .RequestAsync<UploadDocumentResponseDetail>(requestOptions, cancellationToken)
+                .ConfigureAwait(false);
+        }
+
+        public async Task<UploadDocumentResponseDetail> UploadDocumentDetailsAsync(Stream documentContent, string fileName, CancellationToken cancellationToken = default)
+        {
+            return await UploadDocumentDetailsAsync("/document", documentContent, fileName, cancellationToken)
+                   .ConfigureAwait(false);
+        }
+
+        public async Task<UploadDocumentResponse> UpdateDocumentAsync(string documentId, DocumentUpdateRequestModel documentUpdateRequest, CancellationToken cancellationToken = default)
+        {
+            var requestFullUrl = new Uri(ApiBaseUrl, "/document/" + documentId);
+            var requestOptions = new PutHttpRequestOptions
+            {
+                RequestUrl = requestFullUrl,
+                Content = new JsonHttpContent(documentUpdateRequest),
+                Token = Token
+            };
+
+            return await SignNowClient
+                .RequestAsync<UploadDocumentResponse>(requestOptions, cancellationToken)
+                .ConfigureAwait(false);
+        }
+
+        public async Task<SignNowDocument> UpdateDocumentSmartFields(string documentId, string smartData, CancellationToken cancellationToken = default)
+        {
+            var requestUrl = new Uri(ApiBaseUrl, $"/document/{documentId.ValidateId()}/integration/object/smartfields");
+            // string smartDataJson = Newtonsoft.Json.JsonConvert.SerializeObject(smartData);
+            JArray smartDataJson = JArray.Parse(smartData);
+            //           JObject smartDataObj = new JObject(smartData);
+
+            var requestOptions = new PostHttpRequestOptions
+            {
+                RequestUrl = requestUrl,
+                Content = new JsonHttpContent(new { data = smartDataJson, client_timestamp = DateTime.UtcNow }),
+                Token = Token
+            };
+
+            return await SignNowClient
+                    .RequestAsync<SignNowDocument>(requestOptions, cancellationToken)
+                    .ConfigureAwait(false);
+        }
+        public async Task<ResponseDocumentFieldsModel> GetDocumentAsyncResponse(string documentId, CancellationToken cancellationToken = default)
+        {
+            var requestUrl = new Uri(ApiBaseUrl, $"/document/{documentId.ValidateId()}");
+            var requestOptions = new GetHttpRequestOptions
+            {
+                RequestUrl = requestUrl,
+                Token = Token
+            };
+
+            return await SignNowClient
+                .RequestAsync<ResponseDocumentFieldsModel>(requestOptions, cancellationToken)
+                .ConfigureAwait(false);
+        }
+
+    
+       
+
     }
 }

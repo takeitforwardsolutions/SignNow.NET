@@ -6024,11 +6024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
+      "projectUniqueName": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
       "projectName": "SignNow.Net.Examples",
-      "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
+      "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\SignNow.Net.Examples.csproj",
       "packagesPath": "C:\\Users\\nybadmin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Examples\\obj\\",
+      "outputPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Examples\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6048,11 +6048,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj": {
-              "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj"
+            "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj": {
+              "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net.Test\\SignNow.Net.Test.csproj"
             },
-            "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
-              "projectPath": "C:\\Users\\nybadmin\\Source\\Repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
+            "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj": {
+              "projectPath": "C:\\Users\\nybadmin\\source\\repos\\SignNow.NET\\SignNow.Net\\SignNow.Net.csproj"
             }
           }
         }

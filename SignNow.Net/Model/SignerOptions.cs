@@ -21,6 +21,12 @@ namespace SignNow.Net.Model
         public Role SignerRole { get; }
 
         /// <summary>
+        /// Represents the redirect uri for the role.
+        /// </summary>
+        [JsonProperty("redirect_uri")]
+        public Uri RedirectURI { get; set; }
+
+        /// <summary>
         /// Represents the email address of the signer.
         /// </summary>
         [JsonProperty("email")]
@@ -123,7 +129,8 @@ namespace SignNow.Net.Model
         /// <returns></returns>
         SignerOptions ProcessSetAuthentication(Func<string, SignerAuthorization> action, string authParam)
         {
-            if (string.IsNullOrEmpty(authParam)) return this;
+            if (string.IsNullOrEmpty(authParam))
+                return this;
 
             SignerAuth = action(authParam);
 
