@@ -1,4 +1,0 @@
-C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Examples\obj\Debug\netcoreapp3.1\SignNow.Net.Examples.csprojAssemblyReference.cache
-C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Examples\obj\Debug\netcoreapp3.1\SignNow.Net.Examples.AssemblyInfoInputs.cache
-C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Examples\obj\Debug\netcoreapp3.1\SignNow.Net.Examples.AssemblyInfo.cs
-C:\Users\nybadmin\source\repos\SignNow.NET\SignNow.Net.Examples\obj\Debug\netcoreapp3.1\SignNow.Net.Examples.csproj.CoreCompileInputs.cache
