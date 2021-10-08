@@ -7,3 +7,14 @@
 
 # ignore local files with API credentials
 *.signnow.com.json
+/.vs/ProjectSettings.json
+/SignNow.Net/obj/Release/net45/SignNow.Net.AssemblyInfo.cs
+/SignNow.Net/obj/Release/net45/SignNow.Net.AssemblyInfoInputs.cache
+/SignNow.Net/obj/Release/net45/SignNow.Net.csprojAssemblyReference.cache
+/SignNow.Net/obj/Release/netstandard1.2/SignNow.Net.AssemblyInfo.cs
+/SignNow.Net/obj/Release/netstandard1.2/SignNow.Net.AssemblyInfoInputs.cache
+/SignNow.Net/obj/Release/netstandard1.2
+/SignNow.Net/obj/Release/netstandard2.0/SignNow.Net.AssemblyInfo.cs
+/SignNow.Net/obj/Release/netstandard2.0/SignNow.Net.AssemblyInfoInputs.cache
+/SignNow.Net/obj/Release/netstandard2.0/SignNow.Net.csprojAssemblyReference.cache
+slnx.sqlite
