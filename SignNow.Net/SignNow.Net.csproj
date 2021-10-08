@@ -6,16 +6,28 @@
         <TargetFrameworks>netstandard1.2;netstandard2.0;net45</TargetFrameworks>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NeutralLanguage>en-US</NeutralLanguage>
-        <PackageId>SignNow.NET</PackageId>
+        <PackageId>SignNow.Net.TIFSOLU</PackageId>
     </PropertyGroup>
 
     <PropertyGroup>
       <NoWarn>1591</NoWarn>
+      <AssemblyName>SignNow.Net.TIFSOLU</AssemblyName>
+      <Authors>TIFSOLU</Authors>
+      <Company>TIFSOLU</Company>
+      <Description>TIFSOLUI Fork of customized SignNow.Net is a .NET 4.5+ and .NET standard class library for the SignNow API. (Official Library)
+SignNow allows you to embed legally-binding e-signatures into your app, CRM or cloud storage. Send documents for signature directly from your website. Invite multiple signers to finalize contracts. Track status of your requests and download signed copies automatically.</Description>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      <PackageProjectUrl>https://github.com/takeitforwardsolutions/SignNow.NET</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/takeitforwardsolutions/SignNow.NET</RepositoryUrl>
+      <PackageTags>TIFSOLU e-signature;eSign;electronic-signatures;pdf;forms;document;saas;signnow-api;api-client;REST;document management;workflow automation</PackageTags>
+      <PackageReleaseNotes>Release notes are available at: https://github.com/takeitforwardsolutions/SignNow.NET/Releases
+</PackageReleaseNotes>
+      <AssemblyVersion>0.1.0.0</AssemblyVersion>
+      <FileVersion>0.1.0.0</FileVersion>
+      <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+      <PackageIcon>icon2.png</PackageIcon>
+      <Copyright>TifSolu LLC</Copyright>
     </PropertyGroup>
-
-    <ItemGroup>
-        <None Include="icon.png" Pack="true" PackagePath="\" />
-    </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
           <PrivateAssets>all</PrivateAssets>
@@ -35,6 +47,23 @@
 
     <ItemGroup>
       <Compile Remove="SignNowClient.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="icon.png" />
+      <None Remove="icon.png" />
+      <None Include=".">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+      <None Include=".">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+      <None Include="icon2.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
     </ItemGroup>
 
     <ItemGroup>
